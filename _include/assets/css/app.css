@@ -21,7 +21,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  color: #222;
+  color: #111;
   font-size: 16px;
   font-weight: 300;
 }
@@ -151,7 +151,7 @@ main section .form form .form-group select {
   padding: 0 10px;
 }
 main section .form form .form-group button {
-  background: #222;
+  background: transparent;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   padding: 10px 15px;
@@ -163,6 +163,24 @@ main section .form form .form-group button {
   position: relative;
   top: -3px;
   width: 100%;
+  backdrop-filter: blur(40px);
+}
+main section.hero {
+  background-color: #111;
+  color: white;
+  position: relative;
+}
+main section.hero:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/content/unpacking-gift-box.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
 }
 main section.hero .response {
   display: table;
